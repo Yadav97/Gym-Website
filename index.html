@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnold Gym</title>
+ 
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"> 
+ <!---here this style.css file is empty we include to suggest that how css file is include-->
+<style>
+    /* css reset -- means reset the bydefault props so later we set theses props */
+    body{
+        font-family: 'Lobster', cursive;
+
+        margin: 0px;
+        padding: 0px;
+        background-image: url('images/dumbbells-2465478_1920.jpg');
+        /* we put height of body to check scrolling */
+
+        /* height: 4000px;; */
+    }
+    /* all these div  element is block element */
+    .left
+    {
+        /* here we do inline or inline-block so if we use inline-block we can set width cause using inline only width does not affect thhat inline element */
+        display: inline-block;  
+        border: 2px solid green;
+        position: absolute;
+        left: 30px;
+        top:15px;
+
+    }
+    .left img{
+        width: 110px;
+        height: 90px;
+    }
+    .left div{
+        text-align: center;
+        font-size: x-large;
+     
+    }
+    .mid
+    {
+        /* border: 2px solid black; */
+        display: block;
+        width: 600px ;
+        /* margin:y x */
+        margin:40px auto;
+
+
+
+    }
+    .right
+    {
+        display: inline-block;
+        /* now we need to moved the right div element */
+        position: absolute; /*here this right div is moved relative to its parente element (header)*/
+        right: 30px;
+        top: 32px;
+        /* border: 2px solid red; */
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    
+    }
+    .navbar li a
+    {
+        color: red;
+        text-decoration: none;
+        padding: 34px 23px;
+        
+    }
+    .navbar li a:hover, .navbar li a.active
+    {
+        color:blue;
+        
+        text-decoration: overline;
+    }
+    .btn
+    {
+        font-family:'Lobster', cursive  ;
+        margin: 0px 10px;
+        color: white;
+        background-color: black;
+        padding: 4px 15px;  
+        border: 2px solid blanchedalmond;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor:  pointer;
+
+    }
+    .btn:hover
+    {
+        color: rgb(115, 203, 115)
+    }
+    .container
+    {
+        border: 2px solid salmon;
+        width: 40%;
+        padding: 31px;
+        margin: 112px 100px;
+        border-radius: 9px;;
+    }
+    .form-group input
+    {
+        font-family:'Lobster', cursive ;
+        text-align: center;
+        display: block;
+        border: 2px solid salmon ;
+        width: 66%;
+        margin: 10px auto;
+        border-radius:7px;
+        font-size: 15px;
+        
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display:block ;
+        margin:auto;
+
+    }
+
+
+
+     
+
+
+
+</style>
+</head>
+<body>
+
+    <header class="header">
+        <!-- left div box for logo and name -->
+        <div class="left">
+
+            <!-- we are left -->
+           <a href="index.html"><img src="./images/arnold-logo.jpeg" alt=""></a>
+           <div>Arnold Gym</div>
+
+        </div>
+        <!-- mid div box for navbar -->
+        <div class="mid">
+
+<!-- we are mid  -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Subscribe</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+
+            </ul>
+
+        </div>
+
+        <!-- right side box for button or facebook like or buy me a coffee -->
+        <div class="right">
+<!-- we are right -->
+
+<button class="btn">LogIn</button>
+<button class="btn">SignUp</button>
+
+
+        </div>
+
+
+
+
+    </header>
+
+    <!-- now we complete the header  -->
+    <!-- now we make the landing page -->
+
+<div class="container">
+    <h1>Join the best Gym in your city</h1>
+<form action="action.php">
+    <div class="form-group">
+        <input type="text" name="" placeholder="Enter Full Name">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="Age">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="Gender">
+    </div>
+    <button class="btn">Submit </button>
+</form>
+
+</div>
+
+
+    
+</body>
+</html> 
